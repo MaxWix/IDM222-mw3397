@@ -1,0 +1,493 @@
+@font-face {
+    font-family:'poltawskinowy';
+    src: url(fonts/PoltawskiNowy-Regular.woff);
+}
+
+@font-face {
+    font-family:'poltawskinowybold';
+    src: url(fonts/PoltawskiNowy-Bold.woff);
+}
+
+@font-face {
+    font-family:'poltawskinowyitalic';
+    src: url(fonts/PoltawskiNowy-Italic.woff);
+}
+
+@font-face {
+    font-family: 'poltawskinowybolditalic';
+    src: url(fonts/PoltawskiNowy-BoldItalic.woff);
+}
+
+
+html {
+    font-family:'poltawskinowybold', Arial, Helvetica, sans-serif;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:#ffffff;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: 'poltawskinowybold',Arial, Helvetica, sans-serif;
+    margin: 7rem 3rem 0 3rem;
+    Font-weight: bold;
+}
+
+h2 {
+    font-size:3rem;
+    Margin: 3rem 3rem 1rem 3rem;
+    font-family: 'poltawskinowy',Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'poltawskinowy',Arial, Helvetica, sans-serif;
+    font-size:1.5rem;
+    margin: .5rem 3rem 1rem 3rem;
+   }
+
+
+.caseheadtext {
+    position: absolute;
+    font-size:2rem;
+    right:5rem;
+    top: 1rem;
+    font-size:4rem;
+    margin:0;
+    
+}
+
+img {
+    width:100%;
+    height:100%;
+}
+
+
+
+#headbutton {
+    color: #232323;
+}
+
+p.title{
+    margin: .5rem 3rem 0 3rem;
+    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
+}
+
+.porttitle {
+    margin:0 0 0 3rem;
+}
+
+ol, ul {
+    margin: auto auto 2.5rem 3rem;
+    font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
+    font-weight:100;
+} 
+
+.ogwebsite {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/** Home Page **/
+
+/** header **/
+.headcon {
+    position:relative;
+    width:100%;
+    height: 90vh;
+    background-color: #B2D3BE;
+}
+
+.headimg1 {
+    width:100%;
+    height:100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.headimg {
+    width:100%;
+    height:100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.headtext {
+    position:absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.subheadtext{
+    font-size: 3rem;
+    margin: 0 0 .25rem 0;
+}
+
+.sub2headtext{
+    font-size:1.5rem;
+    margin: 0 0 .15rem 0;
+}
+
+/** warhounds **/
+.boardcon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    background-color:#5E6073;
+    position:relative;
+}
+
+.boardtext {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 20rem;
+    height: 22rem;
+    opacity:98%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#89A3B2;
+}
+
+/** h2 **/
+.h2con {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    background-color:#B2D3BE;
+    position:relative;
+}
+
+.h2text {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 20rem;
+    height: 22rem;
+    opacity:98%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #5E6073;
+    
+}
+
+
+
+/** jervo **/
+.jervocon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    background-color:#D7CA86;
+    position:relative;
+}
+
+.jervotext {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 20rem;
+    height: 22rem;
+    opacity:98%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#B2D3BE;
+}
+
+/** inside div text **/
+.hometext {
+    font-size: 2rem;
+    align-self: flex-start;
+    margin: .5rem 0 0 1rem;
+    
+}
+
+h5+p {
+    font-size: 1.5rem;
+    margin: 1rem 2rem 3rem 1rem;
+}
+
+/* h5+p+p {
+    
+    font-size: 1rem;
+    padding-left: 1rem;  
+} */
+
+/** view project links **/
+
+
+a:link{
+    color: #ffffff;
+    text-decoration: none;
+    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
+}
+
+a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
+}
+
+.convp{
+    align-self: flex-end;
+    margin: 0 9rem 1rem 0;
+}
+
+
+
+/** about page **/
+
+.abtitle {
+    text-align: center;
+    font-family: 'poltawskinowybold',Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 3rem auto 1rem auto;
+
+}
+
+.abtext {
+    font-size: 1rem;
+    font-family: 'poltawskinowy',Arial, Helvetica, sans-serif;
+    padding:0;
+    margin: 0 3rem 3rem 3rem;
+    
+}
+
+.abtexta {
+    font-size: 1rem;
+    font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding:0;
+    margin: 0 0 .2rem 3rem;
+
+}
+
+.abtexta+h5 {
+    margin:.2rem 0 1rem 3rem;
+    font-family:'poltawskinowyitalic',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.ablist{
+    margin: 3rem 3rem 0 3rem;
+}
+
+.portrait {
+    position:relative;
+    top: 2rem;
+    right: 3rem;
+}
+
+/** hamburger menu from Erik Terwan **/
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2;
+  
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #232323;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 15rem;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  
+  background: #F2F4D1;
+  opacity: 99%;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+} 
+
+@media screen 
+and (min-width: 500px)
+/* and (orientation:portrait)  */ {
+    
+    /* Home Page */
+    
+    .boardcon {
+        width: 70%;
+      margin-top: -1.5rem;
+      margin-bottom: 3rem;
+      height:80vh;
+    }
+
+    .boardtext {
+        left: 110%;
+        opacity: 100%;
+    }
+    
+    .h2con {
+        width:70%;
+        margin-top: 3rem;
+        margin-left: auto;
+        height: 80vh;
+    }
+    
+    .h2text {
+        left:-10%;
+        opacity: 100%;
+    }
+
+
+    .jervocon {
+      width: 70%;
+      margin-top:3rem;
+      margin-bottom: 3rem;
+      height:80vh;
+    }
+
+    .jervotext {
+        left: 110%;
+        opacity: 100%;
+    }
+
+    .headimg1 {
+        height:90%;
+    }
+
+    .subheadtext {
+        font-size: 6rem;
+    }
+
+    .sub2headtext {
+        font-size: 2rem;
+    }
+
+    
+}
+
+@media screen and (min-width:1000px) {
+
+}
+ahbd
