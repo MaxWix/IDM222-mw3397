@@ -30,8 +30,6 @@ body {
     background-color:#ffffff;
     margin: 0;
     padding: 0;
-    
-    
 }
 
 h1 {
@@ -77,7 +75,7 @@ img {
     z-index: 1000;
 }
 
-p.title{
+p.righttitle{
     margin: .5rem 3rem 0 3rem;
     font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
 }
@@ -105,6 +103,8 @@ ol, ul {
     width:100%;
     height: 90vh;
     background-color: #B2D3BE;
+    display: flex;
+    justify-content: center;
 }
 
 .headimg1 {
@@ -121,10 +121,19 @@ ol, ul {
     object-fit: contain;
 }
 
+.headimg2 {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
 .headtext {
-    position:absolute;
-    top: 25%;
-    left: 10%;
+    position: relative;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    
 }
 
 .subheadtext{
@@ -140,11 +149,16 @@ ol, ul {
 /** warhounds **/
 .boardcon {
     display:flex;
-    justify-content: center;
     align-items: center;
-    height:90vh;
-    background-color:#5E6073;
+    background-color: #5E6073;
     position:relative;
+    
+    
+}
+
+.boardimg1 {
+    background-color:#5E6073;
+    display: block;
 }
 
 .boardtext {
@@ -161,26 +175,22 @@ ol, ul {
     justify-content: space-between;
     align-items:center;
     background-color:#89A3B2;
+    border-radius: 10px;
 }
 
 .boardconhidden{
-    display:flex;
-    justify-content: center;
-    align-items: center;
     display: none;
-    height:90vh;
-    background-color:#5E6073;
-    position:relative;
+    border-radius: 10px 0 0 10px;
 }
 
 /** h2 **/
 .h2con {
     display:flex;
-    justify-content: center;
     align-items: center;
-    height:90vh;
     background-color:#B2D3BE;
     position:relative;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
 }
 
 .h2text {
@@ -197,6 +207,7 @@ ol, ul {
     justify-content: space-between;
     align-items:center;
     background-color: #5E6073;
+    border-radius:10px;
     
 }
 
@@ -204,12 +215,12 @@ ol, ul {
 
 /** jervo **/
 .jervocon {
-    display:flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
-    height:90vh;
+    justify-content: center;
     background-color:#D7CA86;
     position:relative;
+    border-radius: 0 10px 10px 0;
 }
 
 .jervotext {
@@ -226,6 +237,7 @@ ol, ul {
     justify-content: space-between;
     align-items:center;
     background-color:#B2D3BE;
+    border-radius:10px;
 }
 
 .jervobanner {
@@ -455,17 +467,23 @@ a:visited{
   transform: none;
 } 
 
+.upperbox {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+
 @media screen 
-and (min-width: 500px)
+and (min-width: 500px) and (max-width: 899px)
 /* and (orientation:portrait)  */ {
     
     /* Home Page */
     
     .boardcon {
         width: 70%;
-      margin-top: -1.5rem;
-      margin-bottom: 3rem;
-      height:80vh;
+      margin-top: 3rem;
+      height:100%;
     }
 
     .boardtext {
@@ -477,7 +495,7 @@ and (min-width: 500px)
         width:70%;
         margin-top: 3rem;
         margin-left: auto;
-        height: 80vh;
+        height: 100%;
     }
     
     .h2text {
@@ -488,9 +506,93 @@ and (min-width: 500px)
 
     .jervocon {
       width: 70%;
-      margin-top:3rem;
-      margin-bottom: 3rem;
-      height:80vh;
+      margin-top:-1rem;
+      height:100%;
+    }
+
+    .jervotext {
+        left: 110%;
+        opacity: 100%;
+    }
+
+    
+
+    .subheadtext {
+        font-size: 6rem;
+    }
+
+    .sub2headtext {
+        font-size: 2rem;
+    }
+
+    .boardtext {
+        left: 110%;
+        opacity: 100%;
+    }
+
+    /* Jervo Not working 4/7 cant add grids properly*/
+    
+    .upperbox {
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "left left" "right right";
+        grid-gap: 10px;
+    }
+
+    .porttitle {
+        grid-area: left;
+        width: calc(100%/3);
+    }
+
+    .righttext {
+        grid-area: right;
+        width: calc(2 * 100%/3);
+    }
+
+
+    
+   
+}
+
+@media screen and (min-width:900px) {
+
+    /* home page */
+
+    .boardcon {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      height:100%;
+      background-color: transparent;
+    }
+
+    .boardconhidden {
+      margin-left: auto;
+      height:100%;
+      display: block;
+      background-color: #5E6073;
+    }
+
+    .boardtext {
+        opacity: 100%;
+    }
+
+    .h2con {
+        width:70%;
+        margin-top: 4rem;
+        margin-left: auto;
+        height: 100%;
+    }
+    
+    .h2text {
+        left:-10%;
+        opacity: 100%;
+    }
+
+
+    .jervocon {
+      width: 70%;
+      margin-top:-1rem;
+      height:100%;
     }
 
     .jervotext {
@@ -511,33 +613,27 @@ and (min-width: 500px)
     }
 
     
+
+    /* jervo not work 4/7 cant add grids properly */
+    .upperbox {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "left left" "right right";
+        grid-gap: 10px;
+    }
+
+    .porttitle {
+        grid-area: left;
+        width: calc(100%/3);
+    }
+
+    .righttext {
+        grid-area: right;
+        width: calc(2 * 100%/3);
+    }
+
+    
+    
 }
 
-@media screen and (min-width:1000px) {
 
-    /* home page */
-
-    .boardcon {
-        width: 40%;
-      margin-top: -1.5rem;
-      margin-bottom: 3rem;
-      height:80vh;
-    }
-
-    .boardconhidden {
-        width: 50%;
-      margin-top: -1.5rem;
-      margin-bottom: 3rem;
-      margin-left: auto;
-      height:80vh;
-      display: block;
-      background-color: #D7CA86;
-      float:right;
-    }
-
-
-    .boardtext {
-        left: 110%;
-        opacity: 100%;
-    }
-}
