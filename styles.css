@@ -48,8 +48,40 @@ h2 {
 p {
     font-family: 'poltawskinowy',Arial, Helvetica, sans-serif;
     font-size:1.5rem;
-    margin: .5rem 3rem 1rem 3rem;
+    margin: 0 3rem 1rem 3rem;
+    font-weight: lighter;
    }
+
+   .porttitle {
+    text-align: center;
+    margin-top: .2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+}
+
+
+/* Lists */
+ol, ul {
+    margin: 0 3rem 1rem 3rem;
+    font-family:'poltawskinowy',Arial, Helvetica, sans-serif;
+    
+} 
+
+li {
+    font-size:1.5rem; 
+}
+p.righttitle{
+    margin: .5rem 3rem 0 3rem;
+    font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
+}
+
+/* Case study title */
+.ogwebsite {
+    text-align: center;
+    line-height: 3.1rem;
+    margin: 2rem auto 1.2rem auto;
+}
+
 
 
 .caseheadtext {
@@ -65,6 +97,7 @@ p {
 img {
     width:100%;
     height:100%;
+    
 }
 
 
@@ -75,25 +108,13 @@ img {
     z-index: 1000;
 }
 
-p.righttitle{
-    margin: .5rem 3rem 0 3rem;
-    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
-}
 
-.porttitle {
-    margin:0 0 0 3rem;
-}
 
-ol, ul {
-    margin: auto auto 2.5rem 3rem;
-    font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
-    font-weight:100;
-} 
 
-.ogwebsite {
-    text-align: center;
-    margin-bottom: 2rem;
-}
+
+
+
+
 
 /** Home Page **/
 
@@ -241,17 +262,19 @@ ol, ul {
 }
 
 .jervobanner {
-    position: relative;
     width: 100%;
     height: 90vh;
     background-color: #D7CA86;
+    object-fit: contain;
+    position: relative;
+}
+
+.hobanner {
+    
 }
 
 .jervoimg {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+    
 }  
 
 /** inside div text **/
@@ -467,11 +490,6 @@ a:visited{
   transform: none;
 } 
 
-.upperbox {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-}
 
 
 @media screen 
@@ -515,8 +533,6 @@ and (min-width: 500px) and (max-width: 899px)
         opacity: 100%;
     }
 
-    
-
     .subheadtext {
         font-size: 6rem;
     }
@@ -531,24 +547,14 @@ and (min-width: 500px) and (max-width: 899px)
     }
 
     /* Jervo Not working 4/7 cant add grids properly*/
-    
     .upperbox {
-        display:grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas: "left left" "right right";
-        grid-gap: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
     }
 
-    .porttitle {
-        grid-area: left;
-        width: calc(100%/3);
-    }
-
-    .righttext {
-        grid-area: right;
-        width: calc(2 * 100%/3);
-    }
-
+   
+    
+ 
 
     
    
@@ -612,26 +618,14 @@ and (min-width: 500px) and (max-width: 899px)
         font-size: 2rem;
     }
 
+    /* JERVO */
+
+  
+
+
     
 
     /* jervo not work 4/7 cant add grids properly */
-    .upperbox {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "left left" "right right";
-        grid-gap: 10px;
-    }
-
-    .porttitle {
-        grid-area: left;
-        width: calc(100%/3);
-    }
-
-    .righttext {
-        grid-area: right;
-        width: calc(2 * 100%/3);
-    }
-
     
     
 }
