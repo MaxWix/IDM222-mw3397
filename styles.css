@@ -27,65 +27,120 @@ html {
 }
 
 body {
-    background-color:#ffffff;
+    background-color:#fffbf7;;
     margin: 0;
     padding: 0;
+    
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 3rem;
     font-family: 'poltawskinowybold',Arial, Helvetica, sans-serif;
-    margin: 7rem 3rem 0 3rem;
     Font-weight: bold;
 }
 
 h2 {
     font-size:3rem;
-    Margin: 3rem 3rem 1rem 3rem;
+    Margin: 3rem 3rem 1rem 2rem;
     font-family: 'poltawskinowy',Arial, Helvetica, sans-serif;
 }
 
 p {
     font-family: 'poltawskinowy',Arial, Helvetica, sans-serif;
-    font-size:1.5rem;
-    margin: 0 3rem 1rem 3rem;
+    font-size:1rem;
+    margin: 0 3rem 1rem 2rem;
     font-weight: lighter;
    }
 
    .porttitle {
-    text-align: center;
-    margin-top: .2rem;
-    margin-bottom: 1.5rem;
-    line-height: 1;
+    font-size:3rem;
+    margin: 0 0 .5rem 2rem
 }
 
+.listtitle{
+    margin: 1rem 3rem 0 2rem;
+    font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
+    padding: 0;
+}
 
 /* Lists */
 ol, ul {
-    margin: 0 3rem 1rem 3rem;
+    margin: 0 3rem 0 2rem;
     font-family:'poltawskinowy',Arial, Helvetica, sans-serif;
-    
+    padding: 0;
 } 
 
 li {
-    font-size:1.5rem; 
+    font-size:1rem; 
 }
-p.righttitle{
-    margin: .5rem 3rem 0 3rem;
-    font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
-}
+
 
 /* Case study title */
 .ogwebsite {
     text-align: center;
     line-height: 3.1rem;
-    margin: 2rem auto 1.2rem auto;
+    
+}
+
+
+/* Nav */
+
+.nav-container {
+    width: 90%;
+    margin:0 auto;
+}
+
+header {
+    background-color: #fffbf7;
+    height: auto;
+}
+  
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float:left;
+    margin: 0;
+    font-size:4rem;
+    margin-bottom: 1rem;
+    display: none;
+    
+}
+
+nav {
+    float:right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li {
+    display: inline-block;
+    font-size:1.5rem;
+    margin-left:1.5rem;
+    margin-top: 1rem;
+    
 }
 
 
 
-.caseheadtext {
-    position: absolute;
+  
+video {
+    max-width: 300px;
+    margin: 0 auto 1rem auto;
+    display: block;
+}
+
+ .caseheadtext {
+    display: flex;
+    float: right;
     font-size:2rem;
     right:5rem;
     top: 1rem;
@@ -94,31 +149,21 @@ p.righttitle{
     
 }
 
-img {
-    width:100%;
-    height:100%;
-    
-}
-
-
-
 #headbutton {
     color: #232323;
     position: relative;
     z-index: 1000;
+} 
+
+img {
+    width:100%;
+    height:100%;
 }
-
-
-
-
-
-
-
 
 
 /** Home Page **/
 
-/** header **/
+
 .headcon {
     position:relative;
     width:100%;
@@ -128,26 +173,16 @@ img {
     justify-content: center;
 }
 
-.headimg1 {
+.headcontop {
+    position:relative;
     width:100%;
-    height:100%;
-    max-width: 100%;
-    object-fit: contain;
+    height: 70vh;
+    background-color: #B2D3BE;
+    display: flex;
+    justify-content: center;
 }
 
-.headimg {
-    width:100%;
-    height:100%;
-    max-width: 100%;
-    object-fit: contain;
-}
 
-.headimg2 {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-}
 
 .headtext {
     position: relative;
@@ -173,7 +208,8 @@ img {
     align-items: center;
     background-color: #5E6073;
     position:relative;
-    
+    height: 90vh;
+    border-radius: 10px;
     
 }
 
@@ -201,7 +237,13 @@ img {
 
 .boardconhidden{
     display: none;
-    border-radius: 10px 0 0 10px;
+    
+    height: 93vh;
+
+}
+
+.headimg2 {
+    height: auto;
 }
 
 /** h2 **/
@@ -212,6 +254,7 @@ img {
     position:relative;
     justify-content: center;
     border-radius: 10px 0 0 10px;
+    height: 90vh;
 }
 
 .h2text {
@@ -232,6 +275,18 @@ img {
     
 }
 
+.h2img1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wireflowimg {
+    max-width: 400px;
+    margin: 1rem auto;
+    display: block;
+}
+
 
 
 /** jervo **/
@@ -242,6 +297,7 @@ img {
     background-color:#D7CA86;
     position:relative;
     border-radius: 0 10px 10px 0;
+    height: 90vh;
 }
 
 .jervotext {
@@ -261,17 +317,55 @@ img {
     border-radius:10px;
 }
 
+.jervoimg1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageimg {
+    max-width: 800px;
+    display: block;
+    margin: 1rem auto
+
+}
+
+
+/* case study banner images */
 .jervobanner {
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     background-color: #D7CA86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jervobanner img {
+    object-fit: contain;
+    width:100%;
+    height: auto;
+
+}
+
+.hobanner {
+    width: 100%;
+    height: 70vh;
+    background-color: #B2D3BE;
     object-fit: contain;
     position: relative;
 }
 
-.hobanner {
+
+.warbanner {
+    width: 100%;
+    height: 70vh;
+    background-color: #5E6073;
+    object-fit: contain;
+    position: relative;
     
 }
+
 
 .jervoimg {
     
@@ -290,42 +384,83 @@ h5+p {
     margin: 1rem 2rem 3rem 1rem;
 }
 
-/* h5+p+p {
+h5+p+p {
     
     font-size: 1rem;
     padding-left: 1rem;  
-} */
+}
 
-/** view project links **/
 
+
+/* Links */
 
 a:link{
-    color: #ffffff;
+    text-decoration: none;
+    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
+}
+/* project links */
+p a:visited{
+    color: #ffffff ;
     text-decoration: none;
     font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
 }
 
-a:visited{
+p a:link{
     color: #ffffff;
     text-decoration: none;
     font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
 }
+/* nav links */
+p.logo a:link {
+    color: #000000;
+    text-decoration: none;
+    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
+}
+
+p.logo a:visited {
+    color: #000000;
+    text-decoration: none;
+    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
+}
+
+li a:link {
+    color: #89A3B2;
+    text-decoration: none;
+    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
+}
+
+li a:visited {
+    color: #89A3B2;
+    text-decoration: none;
+    font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
+}
+
+
 
 .convp{
-    align-self: flex-end;
-    margin: 0 9rem 1rem 0;
+    align-self: flex-start;
+    margin:2rem 0;
 }
 
+.convp a:hover {
+    color: antiquewhite;
+}
 
 
 /** about page **/
+
+.portrait {
+   
+    max-width: 1000px;
+
+}
 
 .abtitle {
     text-align: center;
     font-family: 'poltawskinowybold',Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: bolder;
-    margin: 3rem auto 1rem auto;
+    margin:0 auto 1rem auto;
 
 }
 
@@ -333,7 +468,7 @@ a:visited{
     font-size: 1rem;
     font-family: 'poltawskinowy',Arial, Helvetica, sans-serif;
     padding:0;
-    margin: 0 3rem 3rem 3rem;
+    margin: 0 2rem 3rem 2rem;
     
 }
 
@@ -342,28 +477,24 @@ a:visited{
     font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
     font-weight: 200;
     padding:0;
-    margin: 0 0 .2rem 3rem;
+    margin: 2rem 0 0 3rem;
 
 }
 
-.abtexta+h5 {
-    margin:.2rem 0 1rem 3rem;
+.abtextb {
+    margin:.2rem 0 0rem 3rem;
     font-family:'poltawskinowyitalic',Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 .ablist{
-    margin: 3rem 3rem 0 3rem;
+    margin: .5rem 3rem 0 3rem;
 }
 
-.portrait {
-    position:relative;
-    top: 2rem;
-    right: 3rem;
-}
+
 
 /** hamburger menu from Erik Terwan **/
-#menuToggle
+/* #menuToggle
 {
   display: block;
   position: absolute;
@@ -488,24 +619,116 @@ a:visited{
 #menuToggle input:checked ~ ul
 {
   transform: none;
-} 
+}  */
 
+/* footer */
+footer {
+    
+    height: 100%;
+    background-color: #5E6073;
+    padding-top: 40px;
+    color: white;
+    
+}
+
+.indexfooter {
+    background-color: #89A3B2;
+}
+
+
+
+
+
+
+.footertop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footertop a {
+    color: white;
+
+}
+
+.footertop a:hover {
+    color: #B2D3BE;
+}
+
+.footertop h4 {
+    margin: 0;
+}
+
+.footertop p {
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.footerbottom {
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footerbottom p{
+   font-size:1rem;
+   float: left;
+}
+
+.footermenu {
+    float: right;
+}
+
+.footermenu ul {
+    display: flex;
+}
+
+.footermenu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footermenu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footermenu ul li a:hover {
+    color:#B2D3BE;
+}
 
 
 @media screen 
 and (min-width: 500px) and (max-width: 899px)
 /* and (orientation:portrait)  */ {
-    
+
+    p {
+        font-size:1.2rem;
+        
+    }
+
+    ul, ol {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        display: block;
+        font-size: 3rem;
+    }
+
+
     /* Home Page */
     
     .boardcon {
         width: 70%;
       margin-top: 3rem;
-      height:100%;
+      
     }
 
     .boardtext {
-        left: 110%;
+        left: 100%;
         opacity: 100%;
     }
     
@@ -513,11 +736,11 @@ and (min-width: 500px) and (max-width: 899px)
         width:70%;
         margin-top: 3rem;
         margin-left: auto;
-        height: 100%;
+        
     }
     
     .h2text {
-        left:-10%;
+        left:0;
         opacity: 100%;
     }
 
@@ -525,11 +748,11 @@ and (min-width: 500px) and (max-width: 899px)
     .jervocon {
       width: 70%;
       margin-top:-1rem;
-      height:100%;
+     
     }
 
     .jervotext {
-        left: 110%;
+        left: 100%;
         opacity: 100%;
     }
 
@@ -542,38 +765,169 @@ and (min-width: 500px) and (max-width: 899px)
     }
 
     .boardtext {
-        left: 110%;
+        left: 100%;
         opacity: 100%;
     }
 
-    /* Jervo Not working 4/7 cant add grids properly*/
+/* 
     .upperbox {
-        max-width: 1000px;
-        margin: 0 auto;
+        width:90%;
+        margin:0 auto;
+    } */
+
+
+    .centercasetitle {
+        text-align: center;
+        margin-bottom:1rem;
+    }
+    
+    .rightlist {
+        margin: 0 15rem 1rem 3rem;
+        padding:  0;
+    
+    }
+   
+    .imgblock {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-   
-    
- 
+    .imgblock img {
+        display: inline-block;
+        vertical-align: top;
+        width:40%;
+        margin: 1rem auto;
+    }
 
+    .imgblock img:first-child {
+        margin-right: 10px; 
+      }
+      
+    .imgblock img:last-child {
+        margin-left: 10px; 
+      }
+
+    .jervobanner img {
+        object-fit: contain;
+        width:70%;
+        height: auto;
     
-   
+    }  
+    
+      /* about page */
+    
+    .portraitblock{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .portrait {
+        max-width: 40%;
+        align-items: center;
+    }
+
+    .abtext1 {
+        flex:1;
+        max-width: 50%;
+        align-self: center;
+    }
+
+    .abouttitle {
+        text-align: center;
+        margin-bottom:2rem;
+    }
+    
+    
+    .abblock {
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+        padding:1rem;
+        box-sizing: border-box;
+    }
+      
+      .abtexta {
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: left;
+    }
+      
+      .abtextb {
+        margin: 0 !important;
+        text-align: left;
+      }
+      
+      .abtext {
+        margin: 1rem 0;
+        text-align: left;
+      }
+      
+      .ablist {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+      
+
+
+      .ablistwrapper {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .ablistblock {
+        width: 40%;
+        padding: 20px;
+        box-sizing: border-box;
+        
+      }
+      
+      .ablisttitle {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top: 0;
+        text-align: center;
+      }
+     
+      .headimg{
+        height: 60vh;
+    }
+
 }
 
 @media screen and (min-width:900px) {
 
+    p {
+        font-size: 1.3rem;
+    }
+
+    ul, ol {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        display: block;
+    }
+
     /* home page */
+
+    .headcon {
+        
+    }
 
     .boardcon {
       margin-top: 4rem;
       margin-bottom: 4rem;
-      height:100%;
+    
       background-color: transparent;
     }
 
     .boardconhidden {
       margin-left: auto;
-      height:100%;
+    
       display: block;
       background-color: #5E6073;
     }
@@ -586,7 +940,7 @@ and (min-width: 500px) and (max-width: 899px)
         width:70%;
         margin-top: 4rem;
         margin-left: auto;
-        height: 100%;
+       
     }
     
     .h2text {
@@ -598,7 +952,7 @@ and (min-width: 500px) and (max-width: 899px)
     .jervocon {
       width: 70%;
       margin-top:-1rem;
-      height:100%;
+      
     }
 
     .jervotext {
@@ -606,9 +960,15 @@ and (min-width: 500px) and (max-width: 899px)
         opacity: 100%;
     }
 
+    .headimg{
+        height: 80vh;
+    }
+
     .headimg1 {
         height:90%;
     }
+
+    
 
     .subheadtext {
         font-size: 6rem;
@@ -620,14 +980,191 @@ and (min-width: 500px) and (max-width: 899px)
 
     /* JERVO */
 
-  
+    .upperbox {
+        width:90%;
+        margin:0 auto;
+    }
 
+   
+
+    .right {
+        width:70%;
+        float:right;
+        margin:0;
+        
+    }
 
     
 
+
+
+    .porttitle {
+        font-weight: bold;
+        font-size: 4rem;
+        text-align:center;
+        line-height: 1;
+    }
+
+    .casecontainer {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-column-gap: 8%;
+        margin:0 auto;
+
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+  
+        
+    }
+    
+    .righttext {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .listtitle {
+        margin-left: 0;
+       
+    }
+
+
+    .ogwebsite {
+        font-weight: bold;
+        font-size: 3rem;
+        text-align:right;
+        line-height: 1;
+        margin:0 ;
+        max-width:500px;
+    }
+
+    .rightlist {
+        margin: 0 0 0 3rem;
+        padding:  0;
+    
+    }
+
+    .centercasetitle {
+        text-align: center;
+        margin-bottom:2rem;
+    }
+
+    .imgblock {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgblock img {
+        display: inline-block;
+        vertical-align: top;
+        width:30%;
+        margin: 1rem auto;
+    }
+
+    .imgblock img:first-child {
+        margin-right: 10px; 
+      }
+      
+    .imgblock img:last-child {
+        margin-left: 10px; 
+      }
+
+    .jervobanner img {
+        object-fit: contain;
+        width:48%;
+        height: auto;
+    
+    }  
+   
+
+
+/* about page */
+    
+    .portraitblock{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .portrait {
+        max-width: 30%;
+    }
+
+    .abtext1 {
+        flex:1;
+        max-width: 50%;
+        align-self: center;
+    }
+
+    .abouttitle {
+        text-align: center;
+        margin-bottom:2rem;
+    }
+    
+    
+    .abblock {
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+        padding:1rem;
+        box-sizing: border-box;
+    }
+      
+      .abtexta {
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: left;
+    }
+      
+      .abtextb {
+        margin: 0 !important;
+        text-align: left;
+      }
+      
+      .abtext {
+        margin: 1rem 0;
+        text-align: left;
+      }
+      
+      .ablist {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+      
+
+
+      .ablistwrapper {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .ablistblock {
+        width: 40%;
+        padding: 20px;
+        box-sizing: border-box;
+        
+      }
+      
+      .ablisttitle {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top: 0;
+        text-align: center;
+      }
+      
+     
+      
+
+  
+    
     /* jervo not work 4/7 cant add grids properly */
     
     
 }
-
 
