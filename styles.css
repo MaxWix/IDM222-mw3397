@@ -160,6 +160,12 @@ img {
     height:100%;
 }
 
+.centercasetitle {
+    text-align: center;
+    margin-bottom:2rem;
+    line-height: 1;
+}
+
 
 /** Home Page **/
 
@@ -465,7 +471,7 @@ li a:visited {
     font-family: 'poltawskinowybold',Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: bolder;
-    margin:0 auto 1rem auto;
+    margin:2rem auto 0 auto;
 
 }
 
@@ -473,21 +479,23 @@ li a:visited {
     font-size: 1rem;
     font-family: 'poltawskinowy',Arial, Helvetica, sans-serif;
     padding:0;
-    margin: 0 2rem 3rem 2rem;
+    margin: 0 2rem 0rem 2rem;
     
 }
+
+
 
 .abtexta {
     font-size: 1rem;
     font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
     font-weight: 200;
     padding:0;
-    margin: 2rem 0 0 3rem;
+    margin: 2rem 0 0 2rem;
 
 }
 
 .abtextb {
-    margin:.2rem 0 0rem 3rem;
+    margin:.2rem 0 0rem 2rem;
     font-family:'poltawskinowyitalic',Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -496,6 +504,9 @@ li a:visited {
     margin: .5rem 3rem 0 3rem;
 }
 
+.ablisttitle {
+    margin: 2rem 0 .5rem 2rem;
+}
 
 
 /** hamburger menu from Erik Terwan **/
@@ -631,8 +642,10 @@ footer {
     
     height: 100%;
     background-color: #5E6073;
-    padding-top: 40px;
+    padding-top: 30px;
     color: white;
+    margin-top:1rem;
+    padding-bottom: 1rem;
     
 }
 
@@ -684,6 +697,7 @@ footer {
 
 .footermenu {
     float: right;
+    display: none;
 }
 
 .footermenu ul {
@@ -721,6 +735,10 @@ and (min-width: 500px) and (max-width: 899px)
     .logo {
         display: block;
         font-size: 3rem;
+    }
+
+    .footermenu {
+        display: block;
     }
 
 
@@ -917,6 +935,10 @@ and (min-width: 500px) and (max-width: 899px)
     }
 
     .logo {
+        display: block;
+    }
+
+    .footermenu {
         display: block;
     }
 
