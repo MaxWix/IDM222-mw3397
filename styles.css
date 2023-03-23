@@ -52,7 +52,7 @@ p {
     font-weight: lighter;
    }
 
-   .porttitle {
+.porttitle {
     font-size:3rem;
     margin: 0 0 .5rem 2rem
 }
@@ -62,6 +62,7 @@ p {
     font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
     padding: 0;
 }
+
 
 /* Lists */
 ol, ul {
@@ -79,12 +80,10 @@ li {
 .ogwebsite {
     text-align: center;
     line-height: 3.1rem;
-    
 }
 
 
 /* Nav */
-
 .nav-container {
     width: 90%;
     margin:0 auto;
@@ -128,10 +127,7 @@ nav li {
     margin-top: 1rem;
     
 }
-
-
-
-  
+ 
 video {
     max-width: 300px;
     margin: 0 auto 1rem auto;
@@ -168,8 +164,6 @@ img {
 
 
 /** Home Page **/
-
-
 .headcon {
     position:relative;
     width:100%;
@@ -187,8 +181,6 @@ img {
     display: flex;
     justify-content: center;
 }
-
-
 
 .headtext {
     position: relative;
@@ -299,7 +291,6 @@ img {
 }
 
 
-
 /** jervo **/
 .jervocon {
     display: flex;
@@ -367,7 +358,6 @@ img {
     position: relative;
 }
 
-
 .warbanner {
     width: 100%;
     height: 70vh;
@@ -377,10 +367,6 @@ img {
     
 }
 
-
-.jervoimg {
-    
-}  
 
 /** inside div text **/
 .hometext {
@@ -402,9 +388,7 @@ h5+p+p {
 }
 
 
-
 /* Links */
-
 a:link{
     text-decoration: none;
     font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
@@ -446,8 +430,6 @@ li a:visited {
     font-family:'poltawskinowybolditalic',Arial, Helvetica, sans-serif;
 }
 
-
-
 .convp{
     align-self: flex-start;
     margin:2rem 0;
@@ -483,8 +465,6 @@ li a:visited {
     
 }
 
-
-
 .abtexta {
     font-size: 1rem;
     font-family:'poltawskinowybold',Arial, Helvetica, sans-serif;
@@ -509,134 +489,6 @@ li a:visited {
 }
 
 
-/** hamburger menu from Erik Terwan **/
-/* #menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  
-  z-index: 1;
-  
-
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; 
-  z-index: 2;
-  
-}
-
-
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #232323;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-
-#menu
-{
-  position: absolute;
-  width: 15rem;
-  height: 100vh;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  
-  background: #F2F4D1;
-  opacity: 99%;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}  */
-
 /* footer */
 footer {
     
@@ -652,11 +504,6 @@ footer {
 .indexfooter {
     background-color: #89A3B2;
 }
-
-
-
-
-
 
 .footertop{
     display: flex;
@@ -795,13 +642,12 @@ and (min-width: 500px) and (max-width: 899px)
         opacity: 100%;
     }
 
-/* 
-    .upperbox {
-        width:90%;
-        margin:0 auto;
-    } */
+    .headimg{
+        height: 60vh;
+    }
 
 
+    /* case study pages */
     .centercasetitle {
         text-align: center;
         margin-bottom:1rem;
@@ -896,8 +742,6 @@ and (min-width: 500px) and (max-width: 899px)
         padding: 0;
         text-align: left;
       }
-      
-
 
       .ablistwrapper {
         display: flex;
@@ -918,9 +762,7 @@ and (min-width: 500px) and (max-width: 899px)
         text-align: center;
       }
      
-      .headimg{
-        height: 60vh;
-    }
+    
 
 }
 
@@ -943,10 +785,6 @@ and (min-width: 500px) and (max-width: 899px)
     }
 
     /* home page */
-
-    .headcon {
-        
-    }
 
     .boardcon {
       margin-top: 4rem;
@@ -972,6 +810,7 @@ and (min-width: 500px) and (max-width: 899px)
         margin-left: auto;
        
     }
+
     
     .h2text {
         left:-10%;
@@ -1001,8 +840,6 @@ and (min-width: 500px) and (max-width: 899px)
         height:90%;
     }
 
-    
-
     .subheadtext {
         font-size: 6rem;
     }
@@ -1011,24 +848,14 @@ and (min-width: 500px) and (max-width: 899px)
         font-size: 2rem;
     }
 
-    /* JERVO */
+    /* Case study pages */
 
-    .upperbox {
-        width:90%;
-        margin:0 auto;
-    }
-
-   
-
-    .right {
-        width:70%;
-        float:right;
-        margin:0;
-        
-    }
-
+    .jervobanner img {
+        object-fit: contain;
+        width:48%;
+        height: auto;
     
-
+    } 
 
 
     .porttitle {
@@ -1047,10 +874,12 @@ and (min-width: 500px) and (max-width: 899px)
     }
 
     .right{
+        width:70%;
+        float:right;
+        margin:0;
         display: flex;
         flex-direction: column;
         justify-content: flex-start; 
-  
         
     }
     
@@ -1063,7 +892,6 @@ and (min-width: 500px) and (max-width: 899px)
         margin-left: 0;
        
     }
-
 
     .ogwebsite {
         font-weight: bold;
@@ -1107,15 +935,8 @@ and (min-width: 500px) and (max-width: 899px)
         margin-left: 10px; 
       }
 
-    .jervobanner img {
-        object-fit: contain;
-        width:48%;
-        height: auto;
     
-    }  
    
-
-
 /* about page */
     
     .portraitblock{
@@ -1170,8 +991,6 @@ and (min-width: 500px) and (max-width: 899px)
         text-align: left;
       }
       
-
-
       .ablistwrapper {
         display: flex;
         justify-content: center;
@@ -1189,15 +1008,6 @@ and (min-width: 500px) and (max-width: 899px)
         text-transform: uppercase;
         margin-top: 0;
         text-align: center;
-      }
-      
-     
-      
-
-  
-    
-    /* jervo not work 4/7 cant add grids properly */
-    
-    
+      }   
 }
 
